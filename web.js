@@ -5,10 +5,6 @@ var stripe = require('stripe')(api_key);
 
 var page = fs.readFileSync('index.html','utf8');
 var app = express.createServer(express.logger());
-<<<<<<< HEAD
-//must be here 
-app.use(express.bodyParser());
-=======
 
 //must be first 
 app.configure(function () {
@@ -17,7 +13,6 @@ app.configure(function () {
     app.use('/', express.static(__dirname + '/')); //all static files should be in /public, not /
     //app.use(app.router);    
 });
->>>>>>> c72c49295110f0200f0366330c3847d33940eecb
 
 
 app.get('/', function(request, response) {
