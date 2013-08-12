@@ -5,8 +5,7 @@ var stripe = require('stripe')(api_key);
 
 var page = fs.readFileSync('index.html','utf8');
 var app = express.createServer(express.logger());
-
-//must be first 
+//must be here 
 app.configure(function () {
     //app.use(express.cookieParser());
     app.use(express.bodyParser());
