@@ -192,7 +192,7 @@ section {
 }
 
 header {
-    background:url(../images/header2.jpg) no-repeat fixed #020202;
+    background:url(../images/fullscreen1.jpg) no-repeat fixed #020202;
     padding-top:10px;
 }
 
@@ -509,7 +509,7 @@ a.post-entry:hover {
 }
 
 #features-banner {
-    background-image:url(../images/sky.jpg);
+    background-image:url(../images/fullscreen2.jpg);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-color:#F0FCFF;
@@ -586,7 +586,7 @@ a.post-entry:hover {
 
 /*Support*/
 #support-banner {
-    background-image:url(../images/bg_blue.jpg);
+    background-image:url(../images/fullscreen3.jpg);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-color:#F0FCFF;
@@ -615,7 +615,7 @@ a.post-entry:hover {
 
 /*Testimonials*/
 #testimonials-background {
-    background-image:url(../images/gallery_bg.jpg);
+    background-image:url(../images/fullscreen4.jpg);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-color:#F0FCFF;
@@ -648,7 +648,7 @@ a.post-entry:hover {
 }
 
 #contact-background {
-    background-image:url(../images/contact_bg.jpg);
+    background-image:url(../images/fullscreen5.jpg);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-color:#F0FCFF;
@@ -895,6 +895,15 @@ html[xmlns] .slides {
 .flexslider li h1#subtitle-font {
     color:rgba(255,255,255,0.64);
     font-size:30px;
+    line-height:1;
+    letter-spacing:-3px;
+    font-family: 'Orchidee'; 
+}
+
+/* subtitle */
+h1#akong-font {
+    color:rgba(255,255,255,0.64);
+    font-size:16px;
     line-height:1;
     letter-spacing:-3px;
     font-family: 'Orchidee'; 
