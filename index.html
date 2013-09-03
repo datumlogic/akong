@@ -29,6 +29,9 @@
         <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
         <link rel="shortcut icon" href="ico/favicon.png">
 
+		<link rel="stylesheet" type="text/css" href="css/feedback.css" media="screen" /> 
+		<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+
 		<style>
 		@font-face {
 		    font-family: 'orchideelight';
@@ -74,11 +77,24 @@
 		    letter-spacing:-3px;
 		    font-family: 'orchideelight'; 
 		}
+		#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+		/* MailChimp form style overrides */
+		input[type="radio"] {
+		  margin-top: -1px;
+		  vertical-align: middle;
+		}
 		</style>
 
     </head>
 
     <body>
+	
+<!-- feedback link -->
+				<div><!-- onclick="window.location='#contact'; -->
+				<!-- <a href="#contact" class="fixed_float_feedback" title="We value your feedback. Thank you."> -->
+				<a data-toggle="modal" href="#myModal" class="fixed_float_feedback" title="We value your feedback. Thank you.">
+				<img src="images/feedback2.png" />
+				</a></div>
 <!-- This section is for Splash Screen -->
 
         <!--################ NAVIGATION START ################-->
@@ -110,10 +126,10 @@
                                     <a href="#reviews">Reviews</a>
                                 </li>
                                 <li class="">
-                                    <a href="#news">What's New</a>
+                                    <a data-toggle="modal" href="#newsletterReg" style="color:white;">Newsletter</a>
                                 </li>
                                 <li class="">
-                                    <a href="#contact">Contact</a>
+                                    <a href="#contact">Media Kit</a>
                                 </li>
 
 
@@ -142,7 +158,7 @@
 	
                             <li>
                                 <div class="span4 animated fadeInLeftBig">
-                                    <img src="images/carousel1.png" height="400px" width="305px" >
+                                    <img src="images/carousel1.jpg" height="400px" width="305px" >
                                 </div>
 
                                 <div class="span7 animated fadeInDownBig">
@@ -155,11 +171,12 @@
 
                             <li class="margin5">
                                 <div class="span6 animated fadeInLeftBig" id="main-media">
-									<iframe src="http://player.vimeo.com/video/71770218" width="400" height="300" 
+									<iframe src="http://player.vimeo.com/video/73588265" width="500" height="281" 
 									        frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
                                 </div>
                                 <div class="span5">
+	                                         
 	<h1 id='title-font'>Akong</h1><hr style="margin-left:70px;margin-right:80px;border-color:#ffcc65;" /><h1 id='subtitle-font'>A Remarkable  Life</h1><br/>
                                     <h3 style="font-size:32px">You are invited you to watch the preview trailer now!</h3>
 
@@ -168,48 +185,63 @@
                             </li>
 
 							<li>
-							<h1 id='title-font'>Akong</h1><hr style="margin-left:420px;margin-right:430px;border-color:#ffcc65;" /><h1 id='subtitle-font'>A Remarkable  Life</h1><br/>
+							    <div class="span4 animated fadeInLeftBig">
+                                    <img src="images/carousel2.jpg" height="400px" width="305px" >
+                                </div>
+								
+							<div class="span7 animated fadeInDownBig">
+									          
+							<h1 id='title-font'>Akong</h1><hr style="margin-left:170px;margin-right:180px;border-color:#ffcc65;"/><h1 id='subtitle-font'>A Remarkable  Life</h1><br/>
 							<h3 style="font-size:32px">We need your help to complete the film and tell the inspiring story of Akong's remarkable life. Contributors also earn very special rewards. Our fundraising campaign is currently in progress.</h3><br/>
 
-															<div class="actions">
-								                                <button tabindex="3" type="submit" class="btn btn-landing ">Please Contribute</button>
-								                            </div>
+								<div class="actions">
+								   <a href="https://www.indiegogo.com/" target="_blank" role="button" class="btn btn-landing" style="background-color:limegreen;font-weight:bold;">Please Contribute</a>
+								</div>
+							</div>
 
 							<li>
 								
-<h1 id='title-font'>Akong</h1><hr style="margin-left:420px;margin-right:430px;border-color:#ffcc65;" /><h1 id='subtitle-font'>A Remarkable  Life</h1><br/>
+								<div class="span4 animated fadeInLeftBig">
+                                    <img src="images/carousel3.jpg" height="400px" width="305px" >
+                                </div>
+								
+								 <div class="span7 animated fadeInDownBig">
+								  <!-- margin-left:420px;margin-right:430px; -->
+<h1 id='title-font'>Akong</h1><hr style="margin-left:170px;margin-right:180px;border-color:#ffcc65;" /><h1 id='subtitle-font'>A Remarkable  Life</h1><br/>
 <h3 style="font-size:32px">Our newsletter will keep you informed of upcoming events, special offers, and it follows our progress through the filmmaking process.</h3><br/>
 								
 								<div class="actions">
-	                                <button tabindex="3" onclick="window.location='#newsletter';" class="btn btn-landing ">Get the Newsletter</button>
-	                            </div>
+							    	<a href="#newsletterReg" role="button" class="btn btn-landing" data-toggle="modal" style="font-weight:bold;">Subscribe Now</a>
+	
+	                        </div>
 							</li>
                         </ul>
 
                     </div>
 
-                    <div class="social-header hidden-phone">
-
-                        <a href="#" class="social-network sn2 behance"></a>
-                        <a href="#" class="social-network sn2 facebook"></a>
-                        <a href="#" class="social-network sn2 pinterest"></a>
-                        <a href="#" class="social-network sn2 flickr"></a>
-                        <a href="#" class="social-network sn2 dribbble"></a>
-                        <a href="#" class="social-network sn2 lastfm"></a>
-                        <a href="#" class="social-network sn2 forrst"></a>
-                        <a href="#" class="social-network sn2 xing"></a>   
-
-
-                    </div>
-
-                </div>
-
-
-
+					
+                
+				<div class="social-header hidden-phone">
+				<!-- AddThis Follow BEGIN -->
+				<p style="color:white;">Follow Us</p>
+				<div class="addthis_toolbox addthis_32x32_style addthis_default_style">
+				<a class="addthis_button_facebook_follow" addthis:userid="akongaremarkablelife"></a>
+				<a class="addthis_button_twitter_follow" addthis:userid="AKONGremarkable"></a>
+				</div>
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-522503e36c9775ba"></script>
+				<!-- AddThis Follow END -->
+			
+				</div>
 
                 <div id="home-arrow" class="hidden-phone">
-                    <a href="#film"  ><i class="icon-double-angle-down icon-3x" id="iconHome"></i></a>
+                    <a href="#film" style="width:100px;">
+						<font style="color:#ffcc65;font-size:1.5em;font-family: 'orchideemedium';">
+							scroll please
+						</font>
+						<i class="icon-double-angle-down" id="iconHome" style="color:#ffcc65;font-size: 6em;"></i>
+					</a>
                 </div>
+           
 
             </header>
 
@@ -224,32 +256,34 @@
 
                 <div id="features-banner" data-stellar-background-ratio="0" >
 
-                    <h1 style="margin-left:-300px;margin-top:-30px;">About the Film</h1>
-					<br><br><br><br>
+                    <h1 style="margin-left:-300px;margin-top:-30px;padding-bottom:20%;">About the Film</h1>
                 </div>
 
                 <div class="container">
 
-                    <div class="row margintop20">
+                    <div class="row margintop20" style="margin-top:5%;margin-bottom:5%;">
 	
-	                <div class="span11">
+	                <div class="span6">
 <p>
-This is the first documentary film about the inspiring life and work of Akong Tulku Rinpoche. The film will gather rare footage and interviews with people who know him best,  to illustrate important moments of his life, including: 
-<ul><li>A near-death experience on the journey through the Himalayas towards the refugee camps in India, in the aftermath of the 1959 Tibetan occupation
-</li><li>
-His arrival in the UK during the swinging 60’s and the cultural shock, and the founding of the Samye Ling Monastery.
-</li><li>
-His role in finding the reincarnation of the 17th Karmapa
-</li><li>
-The development and introduction in the UK of Tara Rokpa therapy, which is a Buddhist-based philosophical understanding of the mind combined with elements drawn from western psychotherapy
-</li><li>
-The expansion of the Samye Ling Monastery and Cultural Centre, located in Scotland, which is considered to be the largest in Europe
-</li><li>
-His extensive humanitarian work, mainly through his organization, Rokpa International.
-</li></ul>
-It is our goal to create a film which is a record of Akongs life work, which in turn will be made available to new generations of Buddhists, researchers and the general public, and dedicated to help end suffering for all sentient beings. We, the filmmakers of this project, are committed to donating half the proceeds from the sale of the DVD to the humanitarian work organized and led by Rokpa International.	
-<br><br><br>	
-</div>
+	This is the first ever documentary film about the inspirational life of Chöje Akong Tulku Rinpoche. Through his powerful message of loving-kindness and compassion and his humanitarian work around the world, Akong Rinpoche has benefitted the lives of countless people. This film aims to make his inspirational life story available to future generations.  
+<br><br>
+	Akong Tulku Rinpoche, born in Kham in Eastern Tibet in 1941, was quickly recognized as a reincarnate Tulku and enthroned as the Abbot of Drolma Lhakhang Monastery at the age of four. In 1959, tensions between China and Tibet reached breaking point and Akong was forced to undertake a dangerous journey across the Himalayas on foot to India aged nineteen. 
+<br><br>
+	From the party of over two hundred Tibetans that set off, only fifteen survived the grueling ten-month ordeal. When they reached their destination, living conditions in Buxadaur refugee camp in Assam were extremely poor. The hot climate combined with the lack of food and medicine claimed the lives of many of the surviving refugees, including Akong's elder brother, Jamyang Chogyal.
+</p></div>
+<div class="span6"><p>
+	In 1963, Akong arrived in the UK with Chogyam Trungpa Rinpoche. In order to support themselves, Akong initially worked as an orderly at a hospital in Oxford. In 1967, he founded the first Tibetan Buddhist monastery in the West - Kagyu Samye Ling in Scotland. 
+<br><br>
+	Samye Ling has become an international centre for authentic Tibetan Buddhist teachings, renowned for bringing great contemporary Buddhist masters such as HH the 16th Karmapa, Dilgo Khyentse Rinpoche, Kalu Rinpoche, Tai Situ, Ringu Tulku amongst others.
+<br><br>
+	Today at 73 years of age, Akong Rinpoche continues to lead an active life supervising his countless projects that reach out to thousands of people in need. For example his charity ROKPA International invests nearly 100% of donations directly into humanitarian projects in Tibet, Nepal, India and Africa. 
+<br><br>
+	Researching and interviewing are already well under way on the film. Thus far the project has been self-funding. However, moving into the principle phase of production, a significant budget is required in order to gather crucial footage from around Europe, Asia and Africa.
+<br><br>
+	We invite you to become involved in the project by helping us to preserve this important story for generations to come.
+</p></div>
+
+</div></div>
 
             </section>
 
@@ -266,20 +300,17 @@ It is our goal to create a film which is a record of Akongs life work, which in 
             <section id="quotes">
                 <div id="support-banner" data-stellar-background-ratio="0.5">
 
-                    <div id="carousel_fade_1" class="carousel slide carousel-fade">
+                    <div id="carousel_fade_1" class="carousel slide carousel-fade" style="margin-bottom:40%;">
 
                         <div class="span5 carousel-inner"  style="margin-top:20px;margin-left:60px;">
                             <div class="item active"><!-- <i class="icon-comments"></i> -->
-                                <h2 style="font-weight:bold;">"Quote One. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus."</h2>
+                                <h2 style="font-weight:bold;">"The real challenge is to have balance and stability within continuous change."</h2>
                             </div>
                             <div class="item"> <!--  <i class="icon-double-angle-up"></i>   -->
-                                <h2 style="font-weight:bold;">"Quote 2. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus.""</h2>
+                                <h2 style="font-weight:bold;">"We can become free if we deepen our understanding of the mind."</h2>
                             </div>
                             <div class="item"> <!--  <i class="icon-desktop"></i>  -->
-	                            <h2 style="font-weight:bold;">"Quote 3. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus." "</h2>
-                                <!-- <h1>Quote 3</h1>
-                                <p class="sub-heading-support">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p> -->
-
+	                            <h2 style="font-weight:bold;">"The mind can be compared to a wild Tiger, rampaging through our daily lives. "</h2>
                             </div>
                         </div>
 
@@ -287,20 +318,20 @@ It is our goal to create a film which is a record of Akongs life work, which in 
                         <button class="carousel-control right car-button" href="#carousel_fade_1" data-slide="next"><i class="icon-chevron-right"></i></button>
 
                     </div>
-<br /><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
                 </div>
 
             </section>
 
             <!--################ CREW SECTION START ################-->
 
-            <section id="crew">
+            <section id="crew"style="background-image:url('images/fullscreen1.jpg');background-repeat:no-repeat;background-attachment:fixed;">
 <br/><br/><br/><br/>
                 <div class="container" id="portfolio">
 
                     <div class="row">
                         <div class="span12 center">
-                            <h1 class="big-heading">The Crew</h1>
+                            <h1 class="big-heading" style="color:white;">The Crew</h1>
                             <h4 class="sub-heading">meet the filmmakers</h4>
 
 
@@ -314,25 +345,37 @@ It is our goal to create a film which is a record of Akongs life work, which in 
 						   <div class="row center margintop40">
 						        <div  class="span4">
 
-						            <div class="item  testimonial active">
+						            <div class="item  testimonial active" style="padding-top:5%;padding-bottom:8%;text-align:left;padding-left:5%;padding-right:5%">
 
-						                <!-- <img src="images/face-1.png">  -->
-						                <h4 style="font-weight:bold;">Chico Dall'Inha</h4>
-										<p style="font-weight:bold;">Producer</p>
-						                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+						                <img src="images/chico2.jpg" style="display:inline-block;">
+										<div style="display:inline-block;padding-left:5%;">
+						                <h4 style="font-weight:bold;padding-left:4%;">Chico Dall'Inha</h4>
+										<p style="font-weight:bold;">Producer & Director</p>
+										</div>
+						                <p style="margin-left:-3%;margin-top:2%;">Chico Dall’Inha is a Film Director, Producer and Editor. 
+										His credits range from drama and documentary, to broadcast and corporate videos.
+										<br><br>
+										Chico runs Awareness Media Productions and creates films for commerce, the arts, and humanities.
+										<br><br>
+										Chico also lectures on editing and sound for film and video
+										at Westminster Adult Education, London
+										</p>
 
 						            </div>
 
 						        </div>
 
-						        <div  class="span4">
+						        <div  class="span4" style="height:40%;">
 
-						            <div class="item  testimonial active">
-
-						                <!-- <img src="images/face-1.png"> -->
-						                <h4 style="font-weight:bold;">Jorg Wagner</h4>
-						                <p style="font-weight:bold;">Co-Producer</p>
-						                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+						            <div class="item  testimonial active" style="padding-top:5%;padding-bottom:32%;text-align:left;padding-left:5%;padding-right:5%">
+						                	<img src="images/jorg2.jpg" style="display:inline-block;">
+						                    <div style="display:inline-block;padding-left:5%;">
+						                	<h4 style="font-weight:bold;padding-left:4%;">Jorg Wagner</h4>
+						                	<p style="font-weight:bold;">Co-Producer & Co-Director</p>
+						                    </div>
+						                <p style="margin-left:-3%;margin-top:2%;">Filmmaker and producer of documentaries and promotional films for art, charity and non-governmental organisations.
+										<br><br>Jorg is a tutor in media studies at Westminster Adult Education, London.
+										</p>
 
 						            </div>
 
@@ -340,12 +383,17 @@ It is our goal to create a film which is a record of Akongs life work, which in 
 						
 						        <div  class="span4">
 
-						            <div class="item  testimonial active">
+						            <div class="item  testimonial active" style="padding-top:5%;text-align:left;padding-left:5%;padding-right:5%">
 
-						                <!-- <img src="images/face-1.png"> -->
-						                <h4 style="font-weight:bold;">Gerry McCulloch</h4>
+						                <img src="images/gerry2.jpg" style="display:inline-block;">
+										<div style="display:inline-block;padding-left:5%;">
+						                <h4 style="font-weight:bold;padding-left:4%;">Gerry McCulloch</h4>
 										<p style="font-weight:bold;">Cinematographer</p>
-						                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+										</div>
+						                <p style="margin-left:-3%;margin-top:2%;">Gerry McCulloch is a photographer, cinematographer and lecturer with many broadcast and exhibitions credits in film, documentary, and promotional videos.<br><br>
+							            He operates Darshana Photo Art and was previously a director of Untold Productions.<br><br>
+										Gerry devised and leads the MA in Filmmaking and two undergraduates Film courses at Goldsmith University of London.
+										</p>
 
 						            </div>
 
@@ -385,9 +433,9 @@ It is our goal to create a film which is a record of Akongs life work, which in 
                         <div  class="span4">
 
                             <div class="item  testimonial active">
-                                <h3>"An Inspiration..."</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+                                <h3>"brought tears to my eyes"</h3>
+                                <p>I have just watched the trailer of AKONG a remarkable life, the first  documentary film being produced about his life and work. It gave me shivers & brought tears to my eyes when I first watched it.</p>
+<p>Lisa Tully, <u><b>Elephant Journal</b></u></p>
                             </div>
 
                         </div>
@@ -396,9 +444,9 @@ It is our goal to create a film which is a record of Akongs life work, which in 
 
                             <div class="item  testimonial active">
 
-                                <h3>"Quite moving...."</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
-
+                                <h3>"realities very few mortals know"</h3>
+                                <p>Two filmmakers started an intricate collaboration 2 years ago...  Little did they know that their curiosity would uncover stories and unknown realities very few mortals know...  Their inquisitiveness and their admiration for a man who changed the face of Buddhism in the West made them embark on a quest:  the adventure of making a documentary about Akong Rinpoche had started!</p>
+<p>Cindy Claes</p>
                             </div>
 
                         </div>
@@ -407,10 +455,9 @@ It is our goal to create a film which is a record of Akongs life work, which in 
 
                             <div class="item  testimonial active">
 
-                                <h3>"A life of compassion..."</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
-<p>Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi.</p>
+                                <h3>"a remarkably beautiful film"</h3>
+                                <p>Akong- A Remarkable Life, is a documentary film that gives you a glimpse into the amasing life of Chöje Akong Tulku Rinpoche. It's his life story, filled with compassion, dignity, conviction and hope. This film left me truly moved and is a remarkably beautiful film.</p>
+<p><i>Anonymous</i></p>
                             </div>
 
                         </div>
@@ -424,250 +471,35 @@ It is our goal to create a film which is a record of Akongs life work, which in 
 
 
 
-
-            <!--################ NEWS SECTION START ################-->
-
-
-            <section id="news" class="paddingbottom40">
-	<br/><br/><br/><br/>
-                <div class="container">
-
-                    <div class="row center">
-                        <div class="span12">
-                            <h1 class="big-heading">Latest News</h1>
-                            <p>Curabitur nisi mi, tincidunt a vehicula non, euismod sed felis.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="row margintop40">
-                        <div class="span6 left shadowbox homepage-post">
-
-                            <div class="post-img picture"><img src="images/news1.jpg" alt="" />
-                                <div class="overlay">
-                                    <div class="op"></div>
-                                    <ul class="icons">
-                                        <li><span class="bg"></span><a href="#" class="icon-link"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="post">
-
-                                <div class="headline"><h2 class="muted">news heading...</h2></div>
-                                <div class="post-meta"><h2 class="big-h2-heading"><i  class="icon-calendar"></i>12th<br/>August</h2>
-
-                                </div>
-                                <div class="post-content margintop">
-                                    <div class="post-description">
-                                        <p>Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempor. Nam erat felis, commodo sed semper commodo vel mauris suspendisse dignissim bibendum tempus.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="span6 left shadowbox homepage-post">
-
-                            <div class="post-img picture"><img src="images/news2.jpg" alt="" />
-
-                                <div class="overlay">
-                                    <div class="op"></div>
-                                    <ul class="icons">
-                                        <li><span class="bg"></span><a href="#" class="icon-link"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="post">
-
-                                <div class="headline"><h2 class="muted">post heading ...</h2></div>
-                                <div class="post-meta"><h2 class="big-h2-heading"><i  class="icon-calendar"></i>21st<br/>March</h2>
-
-                                </div>
-                                <div class="post-content margintop">
-                                    <div class="post-description">
-                                        <p>Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempor. Nam erat felis, commodo sed semper commodo vel mauris suspendisse dignissim bibendum tempus.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                    
-                  
-                  </div> <!-- end of container -->
-                </section>
-					<!--################ NEWS SECTION END ################-->
-
-
-		            <!--################ NEWLETTER SECTION START ################-->
-
-                 <section id="newsletter">
-	                <div class="container">
-		
-		            <hr class="line">
-                    <div class="row" data-stellar-background-ratio="0" >
-                        <div class="span12 center">
-                            <h1 class="big-heading">Newsletter</h1>
-                            <h4 class="sub-heading">Keep informed of production progress, event announcements and special offers.</h4>
-                        </div>
-
-                        <form action="http://akong-remarkablelife.us7.list-manage1.com/subscribe/post?u=93df2d309ccd8bda55b9d2f95&amp;id=ffda70ed40" 
-                              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	
-						<div>
-							<label for="mce-EMAIL">Email Address (Required)
-						</label>
-							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" size=80 />
-						</div>
-						
-<!--
-						<div class="clearfix">
-                            <label for="mce-EMAIL"><span>Email Address (Required)</span></label>
-                            <div class="input">
-                                 <input  id="mce-EMAIL" name="EMAIL" type="email" value="" class="input-xlarge">
-                            </div>
-                        </div>
--->
-						<div>
-							<label for="mce-FNAME">First Name  (Required)
-						</label>
-							<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" size=60 />
-						</div>
-						<div>
-							<label for="mce-LNAME">Last Name  (Required)
-						</label>
-							<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" size=60 />
-						</div>
-						<div>
-							<label for="mce-PHONE">Phone Number</label>
-							<input type="text" name="PHONE" class="" value="" id="mce-PHONE" size=60 />
-						</div>
-						<div>
-							<label for="mce-LOCATION">Location (eg- London, England)</label>
-							<input type="text" value="" name="LOCATION" class="" id="mce-LOCATION" size=60 />
-						</div>
-						<div>
-							<label for="mce-REASON">What's your interest in this film?</label>
-							<input type="text" value="" name="REASON" class="" id="mce-REASON" size=200 />
-						</div>
-						<div><br/>
-						    <strong>Email Format </strong><br/>
-						    <input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0" checked='checked'> html<br/>
-							<input type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"> text<br/><br/><br/>
-						</div>
-							<div id="mce-responses" class="clear">
-								<div class="response" id="mce-error-response" style="display:none"></div>
-								<div class="response" id="mce-success-response" style="display:none"></div>
-							</div>	
-							<!-- <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div> -->
-							<div class="actions">
-                                <button tabindex="10" type="submit" class="btn btn-landing" id="mc-embedded-subscribe" name="subscribe">Subscribe</button>
-                            </div>
-						</form>
-                   </div>
-            </section>
-
-
-
-            <!--################ NEWSLETTER SECTION END ################-->
-
-
             <!--################ CONTACT SECTION START ################-->
 
 
             <section id="contact" class="margintop20">
                 <div id="contact-background" data-stellar-background-ratio="0" >
 
-                    <h1>Contact Us</h1>
+                    <h1 style="color:#7b0607;">Get our Media Kit</h1>
                 </div>
 
                 <div class="container">
-                    <div class="row margintop10">
-
-
-
-                        <!-- test- put these here --> 
-                        <form class="form-main"> 
-                        <fieldset> 
-	
-                        <div class="span6">
-                            <h2 class="big-h2-heading"><i  class="icon-envelope-alt"></i> Contact Us</h2>
-                            <p>Please do not hesitate to comment or ask us anything about the film, the fundraising, or this site.</p>
-                            <!--  <form class="form-main"> -->
-
-                             <!--     <fieldset> -->
-                                    <div class="clearfix">
-                                        <label for="name"><span>Name:</span></label>
-                                        <div class="input">
-                                            <input  id="name" name="name" type="text" value="" class="input-xlarge">
-                                        </div>
-                                    </div>
-
-                                    <div class="clearfix">
-                                        <label for="email"><span>Email:</span></label>
-                                        <div class="input">
-                                            <input  id="email" name="email" type="text" value="" class="input-xlarge">
-                                        </div>
-                                    </div>
-
-<!--
-                                    <div class="clearfix">
-                                        <label for="message"><span>Message:</span></label>
-                                        <div class="input">
-                                            <textarea tabindex="3" class="input-xlarge" id="message" name="body" rows="7"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="actions">
-                                        <button tabindex="3" type="submit" class="btn btn-landing ">Send</button>
-                                    </div>
--->
-                             <!--   </fieldset>
-
-
-                            </form> -->
-                        </div>
-
-                        <div class="span5 offset1">
-                            <div class="clearfix">
-                                <label for="message"><span>Message:</span></label>
-                                <div class="input">
-                                    <textarea tabindex="3" class="input-xlarge" id="message" name="body" rows="7"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="actions">
-                                <button tabindex="3" type="submit" class="btn btn-landing ">Send</button>
-                            </div>
-	                    </div>
-	
-	<!-- test, put these here -->
-	
-							</fieldset>
-						</form>
-	
-
-                    </div>
-                </div>
-
-
-
+                    <div class="row margintop10" style="margin-top:10%;margin-bottom:20%;">
+						<div class="span6">
+							If you are a member of the media and would like to feature a story about this film, please start by downloading our media kit.
+							Images used on this page are originals created by various people. Please contact us prior to usage to confirm their availability.
+							<br><br>
+							if you have any other queries, do not hesitate to contact us by clicking on the 'Contact' link on the top right of this site.
+						</div>
+						<div class="span6 center">
+							<a href="downloads/mediakit.zip" style="color:#7b0607;">Download our Media Kit Here</a>
+						</div>
+				</div>
             </section>
-
 
             <!--################ CONTACT SECTION END ################-->
 
 
 
-
-
-
-
             <!--################ BOTTOM SECTION START ################-->
-
+<!--
             <section id="bottom" class="paddingbot20">
 
                 <div class="row center">
@@ -703,7 +535,7 @@ It is our goal to create a film which is a record of Akongs life work, which in 
                 </div>
 
             </section>
-
+-->
             <!--################ BOTTOM SECTION END ################-->
 
 
@@ -721,29 +553,27 @@ It is our goal to create a film which is a record of Akongs life work, which in 
                 <div class="row">
                     <div class="span4">
                         <!--<h2>about us...</h2>-->
-                        <img src="images/logo.png" >
-
-                        <!--<p><br /Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>-->
-                        <p><br />Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+                        <img src="images/logotype.png" >
                         <p class="copyright">
-                            © 2013 Awareness Productions
+                            © 2013 Awareness Media Productions
                         </p>
                     </div>
                     <div class="span2">
                         <h2>links </h2>
                         <ul class="unstyled footer-links">
-                            <li><a href="#" class="flink">About Us</a></li>
-                            <li><a href="#" class="flink">The Team</a></li>
-                            <li><a href="#" class="flink">Blog</a></li>
+                            <li><a href="#" class="flink">The Film</a></li>
+                            <li><a href="#" class="flink">The Crew</a></li>
+                            <li><a href="#" class="flink">Reviews</a></li>
+                            <li><a href="#" class="flink">Media Kit</a></li>
                             <li><a href="#" class="flink">Contact</a></li>
-                            <li><a href="#" class="flink">Privacy Policy</a></li>
-                            <li><a href="#" class="flink">Terms of Use</a></li>
+                            <li><a href="#" class="flink">Newsletter</a></li>
+
                         </ul>
                     </div>
 
                     <div class="span3">
                         <h2>subscribe </h2>
-
+<!--
                         <a href="#" class="social-network sn2 behance"></a>
                         <a href="#" class="social-network sn2 facebook"></a>
                         <a href="#" class="social-network sn2 pinterest"></a>
@@ -752,16 +582,11 @@ It is our goal to create a film which is a record of Akongs life work, which in 
                         <a href="#" class="social-network sn2 lastfm"></a>
                         <a href="#" class="social-network sn2 forrst"></a>
                         <a href="#" class="social-network sn2 xing"></a>      
-
+-->
 
                     </div>
 
-                    <div class="span3">
-                        <h2 class="center"><i class="icon-twitter"></i></h2>
-                        <ul id="twitter" class="unstyled">
 
-                        </ul>
-                    </div>
 
 
                 </div>
@@ -816,50 +641,75 @@ It is our goal to create a film which is a record of Akongs life work, which in 
 
 
         <!--REGISTER MODAL --> 
-
         <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3>Create a New Account</h3>
-            </div>
-            <div class="modal-body">
 
-                <form class="form-vertical form-modal">
-                    <fieldset>
-
-                        <!-- Form Name -->
+			<iframe width="100%" height="605" allowTransparency="true" frameborder="0" scrolling="no" style="border:none" src="http://www.emailmeform.com/builder/embed/VCnke1o403xG719"><a href="http://www.emailmeform.com/builder/embed/VCnke1o403xG719">Fill out form.</a></iframe>
+			<div style="margin-top:18px;text-align:center"><script type="text/javascript">generate_css_for_emf_ad();</script></div>
 
 
-                        <!-- Text input-->
-                        <div class="control-group">
-                            <label class="control-label">Name</label>
-                            <div class="controls">
-                                <input id="textinput" name="textinput" type="text" placeholder="" class="input-xxlarge">
-
-                            </div>
-                        </div>
-
-                        <!-- Text input-->
-                        <div class="control-group">
-                            <label class="control-label">Email</label>
-                            <div class="controls">
-                                <input id="textinput" name="textinput" type="text" placeholder="" class="input-xxlarge">
-
-                            </div>
-                        </div>
-
-                    </fieldset>
-                </form>
-
-            </div>
-            <div class="modal-footer">
-
-                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Create New Account</button>
-            </div>
         </div>
 
         <!--REGISTER MODAL END--> 
+
+
+        <!--REGISTER MODAL2 --> 
+        <div id="newsletterReg" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Subscribe to our Newsletter</h3>
+            </div>
+
+
+			<div id="mc_embed_signup" style="margin-left:20px">
+			<form action="http://fezzee.us7.list-manage.com/subscribe/post?u=93df2d309ccd8bda55b9d2f95&amp;id=ffda70ed40" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+			<div class="indicates-required"><b style="color:red">*</b> indicates required</div><br>
+			<div class="mc-field-group">
+				<label for="mce-EMAIL">Email Address<b style="color:red">*</b>
+			</label>
+				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+			</div>
+			<div class="mc-field-group">
+				<label for="mce-FNAME">First Name<b style="color:red">*</b>
+			</label>
+				<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+			</div>
+			<div class="mc-field-group">
+				<label for="mce-LNAME">Last Name<b style="color:red">*</b>
+			</label>
+				<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+			</div>
+			<div class="mc-field-group">
+				<label for="mce-LOCATION">Location (eg- London UK) </label>
+				<input type="text" value="" name="LOCATION" class="" id="mce-LOCATION">
+			</div>
+			<div class="mc-field-group input-group">
+			    <strong>Email Format </strong>
+			    <ul><li><input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0" checked><label for="mce-EMAILTYPE-0">&nbsp;&nbsp;html</label></li>
+			<li><input type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"><label for="mce-EMAILTYPE-1">&nbsp;&nbsp;text</label></li>
+			<li><input type="radio" value="mobile" name="EMAILTYPE" id="mce-EMAILTYPE-2"><label for="mce-EMAILTYPE-2">&nbsp;&nbsp;mobile</label></li>
+			</ul>
+			</div>
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>
+				<div class="actions">
+			        <button tabindex="10" type="submit" class="btn btn-landing" id="mc-embedded-subscribe"      
+						    name="subscribe">Subscribe</button>
+			    </div>
+			    <!--	
+				<div class="clear">
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</div>
+				-->
+				</form>
+			</div>
+        </div>
+
+        <!--REGISTER MODAL END-->
+
 
     </body>
 </html>
