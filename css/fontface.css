@@ -1,12 +1,12 @@
 @font-face {    
 	font-family: 'Orchidee';    
-	src: url('../fonts/ORCHL___.TTF') format('truetype');
+	src: url('../font/ORCHL___.TTF') format('truetype');
 }
 @font-face {    
 	font-family: 'OrchideeMedium';    
-	src: url('../fonts/ORCHM___.TTF') format('truetype');
+	src: url('../font/ORCHM___.TTF') format('truetype');
 }
 @font-face {    
 	font-family: 'Bleak Chop';    
-	src: url('../fonts/Bleak Chop.ttf') format('truetype');
+	src: url('../font/Bleak Chop.ttf') format('truetype');
 }

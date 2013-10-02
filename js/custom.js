@@ -8,6 +8,7 @@ $(window).load(function() {
 
 
 });
+
 $(document).ready(function() {
 
     $('#carousel_vertical_slide,#carousel_fade, #carousel_vertical_testimonial, #carousel_fade_icons, #carousel_fade_1, #carousel_fade_2, #carousel_testimonial_2').carousel({
