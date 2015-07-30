@@ -7,6 +7,12 @@
         <meta name="akong-a remarkable life" content="">
         <meta name="gene myers" content="">
 
+        <script type="text/javascript">
+		 function hideLoadingLayer(){
+		 document.getElementById("loading_layer").style.visibility="hidden";
+		 }
+		 </script>
+        
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 
         <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -33,6 +39,8 @@
 
 		<link rel="stylesheet" type="text/css" href="css/feedback.css" media="screen" /> 
 		<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+		
+		
 
 		<style>
 		@font-face {
@@ -93,10 +101,39 @@
 		  vertical-align: middle;
 		}
 		</style>
-
+		<style>
+		#loading_layer{
+		position:absolute;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+		z-index:999999;
+		background-color: #FFF;
+		
+		background-image:url('images/fullscreen1.jpg');
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:cover;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		-o-background-size:cover;
+		
+		text-align: center;
+		margin: 0 auto;
+		}
+		.centerscreen{
+		  position: fixed;
+		  top: 50%;
+		  left: 50%;
+		  /* bring your own prefixes */
+		  transform: translate(-50%, -50%);
+		}
+        </style>
     </head>
 
-    <body>
+    <body onload="hideLoadingLayer();">
+	<div id="loading_layer"><img class="centerscreen" src="images/prayerwheel-loading.gif" alt="loading..." width="51" height="72" border="0" /><p class="centerscreen" style="margin-top:45px;color:#ffffff;">loading...</p></div>
 	
 <!-- feedback link -->
 				<div><!-- onclick="window.location='#contact'; -->
@@ -699,6 +736,7 @@
 
 
         <!--################ JAVASCRIPTS ################-->
+
 
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="js/jquery.js"></script>
